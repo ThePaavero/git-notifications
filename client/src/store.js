@@ -4,12 +4,12 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  something: null
+  events: []
 }
 
 const mutations = {
-  setSomething(state, something) {
-    state.something = something
+  addEvent(state, eventObject) {
+    state.events.push(eventObject)
   }
 }
 

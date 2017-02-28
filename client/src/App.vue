@@ -1,7 +1,11 @@
 <template>
   <div id='app'>
-    <h1>Hello World!</h1>
-    <ExampleComponent/>
+    <h1>VCS Events</h1>
+    <ul>
+      <li v-for='event in this.$store.state.events'>
+        {{ event }}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -17,10 +21,14 @@
     components: {
       ExampleComponent
     },
+    data() {
+      return {}
+    },
     mounted() {
       console.log('Mounted...')
       socket.on('data', data => {
-        console.log('Got socket data:', data)
+        console.log('Got socket data')
+        this.$store.commit('addEvent', data)
       })
     },
     methods: {}
