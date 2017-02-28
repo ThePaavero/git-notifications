@@ -9,6 +9,7 @@ const state = {
 
 const mutations = {
   addEvent(state, eventObject) {
+    eventObject.socketMessageReceived = new Date()
     state.events.push(eventObject)
   }
 }
