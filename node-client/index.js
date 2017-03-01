@@ -14,4 +14,4 @@ socket.on('data', event => {
   })
 })
 
-console.log('Listening to events...')
+console.log('Listening to events, connected to socket at ' + config.apiUrl)

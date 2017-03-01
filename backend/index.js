@@ -1,17 +1,17 @@
-var express = require('express')
-var app = express()
-var server = require('http').createServer(app)
-var io = require('socket.io')(server)
-var bodyParser = require('body-parser')
-var port = 4200
+const express = require('express')
+const app = express()
+const server = require('http').createServer(app)
+const io = require('socket.io')(server)
+const bodyParser = require('body-parser')
+const port = 4200
 
 server.listen(port)
 console.log('Backend is listening to POST from VCS and socket connections from clients. (http://localhost:' + port + ')')
 
 app.use(bodyParser.json())
 
-app.post('/', function (req, res) {
-  var data = req.body
+app.post('/', (req, res) => {
+  const data = req.body
   reactToReceivedEventData(data)
   res.send({
     success: true,
@@ -19,17 +19,17 @@ app.post('/', function (req, res) {
   })
 })
 
-var connectedClients = []
+const connectedClients = []
 
-io.on('connection', function (client) {
+io.on('connection', client => {
   console.log('Client connected!')
   connectedClients.push(client)
 })
 
-var reactToReceivedEventData = function (data) {
+const reactToReceivedEventData = (data) => {
   console.log('Reacting to event data, emitting to connected sockets...')
-  var sentToClientsCount = 0
-  connectedClients.forEach(function (client) {
+  let sentToClientsCount = 0
+  connectedClients.forEach(client => {
     client.emit('data', data)
     sentToClientsCount++
   })
