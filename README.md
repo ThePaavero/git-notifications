@@ -2,6 +2,8 @@
 Subscribe to real time, native desktop notifications of
 version control events for a certain repository.
 
+![Screenshot](/screenshot.png?raw=true "Screenshot")
+
 ## The backend
 Get this running on a server, it's going to be the target of
 your VCS webhooks.
