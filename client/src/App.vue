@@ -31,7 +31,7 @@
 <script>
   import CommitList from './components/CommitList.vue'
   import moment from 'moment'
-  import Config from './../config.json'
+  import Config from '../apiConfig.json'
 
   const io = window.io
   const apiUrl = Config.apiUrl
