@@ -31,9 +31,10 @@
 <script>
   import CommitList from './components/CommitList.vue'
   import moment from 'moment'
+  import Config from './../config.json'
 
   const io = window.io
-  const apiUrl = 'http://localhost:4200'
+  const apiUrl = Config.apiUrl
   const socket = io.connect(apiUrl)
 
   export default {
@@ -61,6 +62,10 @@
 <style lang='scss' rel='stylesheet/scss'>
   #app {
     font-family: Arial, sans-serif;
+
+    a {
+      color: inherit;
+    }
 
     table {
       width: 100%;

@@ -24,7 +24,4 @@
 </script>
 
 <style lang='scss' rel='stylesheet/scss' scoped>
-  h3 {
-    font-size: 15px;
-  }
 </style>
