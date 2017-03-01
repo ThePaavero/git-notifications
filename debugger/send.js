@@ -6,12 +6,12 @@ axios.post(webHookUrl, {
     "type": "GitPush",
     "before": "xxxxxxxx",
     "after": "yyyyyyyy",
-    "branch": "branch-name",
+    "branch": "master",
     "ref": "refs/heads/branch-name",
     "repository": {
       "id": 42,
-      "name": "repo",
-      "title": "repo",
+      "name": "project-x",
+      "title": "Project X",
       "type": "GitRepository"
     },
     "beanstalk_user": {
@@ -19,7 +19,7 @@ axios.post(webHookUrl, {
       "id": 42,
       "login": "username",
       "email": "user@example.org",
-      "name": "Name Surname"
+      "name": "Dennis Developer"
     },
     "commits": [
       {
@@ -59,5 +59,7 @@ axios.post(webHookUrl, {
     ]
   }
 })
-  .then(console.log)
+  .then(() => {
+    console.log('Sent dummy JSON')
+  })
   .catch(console.log)
