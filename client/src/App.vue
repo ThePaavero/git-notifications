@@ -1,7 +1,6 @@
 <template>
   <div id='app'>
     <h1>VCS Events</h1>
-    <!--{{ event }}-->
     <table>
       <thead>
       <tr>
@@ -46,7 +45,6 @@
       return {}
     },
     mounted() {
-      console.log('Mounted...')
       socket.on('data', data => {
         console.log('Got socket data')
         this.$store.commit('addEvent', data)
