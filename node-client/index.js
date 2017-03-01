@@ -1,4 +1,7 @@
-const subscribeToRepo = 'project-x'
+const subscribeToRepo = process.argv[2]
+if (typeof subscribeToRepo === 'undefined') {
+  return console.log('Only argument should be the repository slug. None given.')
+}
 
 const notifier = require('node-notifier')
 const config = require('./../apiConfig.json')
