@@ -11,6 +11,7 @@
     </ul>
   </div>
 </template>
+
 <script>
   export default {
     props: ['commits'],
@@ -21,6 +22,7 @@
     components: {}
   }
 </script>
+
 <style lang='scss' rel='stylesheet/scss' scoped>
   h3 {
     font-size: 15px;
