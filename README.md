@@ -2,6 +2,8 @@
 Subscribe to real time, native desktop notifications of
 version control events for a certain repository.
 
+*NOTE*: The client is set up to render Beanstalk's event object schema. Edit to suit your version control provider if needed.
+
 ![Screenshot](/screenshot.png?raw=true "Screenshot")
 
 ## The backend
