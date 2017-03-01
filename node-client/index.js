@@ -1,5 +1,5 @@
 const notifier = require('node-notifier')
-const config = require('./../client/apiConfig.json')
+const config = require('./../apiConfig.json')
 const socket = require('socket.io-client')(config.apiUrl);
 
 const buildMessage = (event) => {
@@ -7,6 +7,7 @@ const buildMessage = (event) => {
 }
 
 socket.on('data', event => {
+  console.log('Event received, showing notification')
   notifier.notify({
     'title': 'New git event',
     'message': buildMessage(event)
