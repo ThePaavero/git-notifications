@@ -12,5 +12,6 @@ the URL to suit your setup (where is your backend running?).
 
 ## Usage
 ```
-$ node index.js repo-slug
+$ node index.js repo-slug formatter
 ```
+...where "repo-slug" is the slug of the repository and "formatter" is the VCS (beanstalk, bitbucket, github, etc.)
