@@ -2,7 +2,12 @@
 Subscribe to real time, native desktop notifications of
 version control events for a certain repository.
 
-*NOTE:* Supports the following service's event object schemas: GitHub, Beanstalk and BitBucket. Feel free to create your own formatters.
+*NOTE:* Supports the following services' event object schemas:
+* GitHub
+* Beanstalk
+* BitBucket.
+
+Feel free to create your own formatters.
 
 *NOTE 2:* When using GitHub's webhooks, make sure to set "content type" to "application/json" and check "Just the push event."
 
