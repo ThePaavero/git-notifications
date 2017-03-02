@@ -2,7 +2,7 @@
 Subscribe to real time, native desktop notifications of
 version control events for a certain repository.
 
-*NOTE:* Only Beanstalk's and BitBucket's push event object schema is supported.
+*NOTE:* Only Beanstalk's and BitBucket's push event object schemas are supported.
 
 ![Screenshot](/screenshot.png?raw=true "Screenshot")
 
