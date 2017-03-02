@@ -2,7 +2,7 @@
 Subscribe to real time, native desktop notifications of
 version control events for a certain repository.
 
-*NOTE:* Only Beanstalk's event object schema is tested. BitBucket formatter exists, but isn't tested yet.
+*NOTE:* Only Beanstalk's and BitBucket's push event object schema is supported.
 
 ![Screenshot](/screenshot.png?raw=true "Screenshot")
 

@@ -1,129 +1,217 @@
 {
-  "actor": "[[Owner]]",
-  "repository": "[[Repository]]",
   "push": {
     "changes": [
       {
-        "new": {
-          "type": "branch",
-          "name": "name-of-branch",
-          "target": {
-            "type": "commit",
-            "hash": "709d658dc5b6d6afcd46049c2f332ee3f515a67d",
-            "author": "[[User]]",
-            "message": "new commit message\n",
-            "date": "2015-06-09T03:34:49+00:00",
-            "parents": [
-              {
-                "type": "commit",
-                "hash": "1e65c05c1d5171631d92438a13901ca7dae9618c",
-                "links": {
-                  "self": {
-                    "href": "https://api.bitbucket.org/2.0/repositories/user_name/repo_name/commit/8cbbd65829c7ad834a97841e0defc965718036a0"
-                  },
-                  "html": {
-                    "href": "https://bitbucket.org/user_name/repo_name/commits/8cbbd65829c7ad834a97841e0defc965718036a0"
-                  }
-                }
-              }
-            ],
+        "truncated": false,
+        "forced": false,
+        "commits": [
+          {
+            "message": "blah lba\n",
             "links": {
+              "patch": {
+                "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/patch/666666666666666666666666666"
+              },
+              "diff": {
+                "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/diff/666666666666666666666666666"
+              },
+              "approve": {
+                "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/commit/666666666666666666666666666/approve"
+              },
               "self": {
-                "href": "https://api.bitbucket.org/2.0/repositories/user_name/repo_name/commit/c4b2b7914156a878aa7c9da452a09fb50c2091f2"
+                "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/commit/666666666666666666666666666"
               },
               "html": {
-                "href": "https://bitbucket.org/user_name/repo_name/commits/c4b2b7914156a878aa7c9da452a09fb50c2091f2"
+                "href": "https://bitbucket.org/USER-NAME/REPO-NAME/commits/666666666666666666666666666"
+              },
+              "comments": {
+                "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/commit/666666666666666666666666666/comments"
+              },
+              "statuses": {
+                "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/commit/666666666666666666666666666/statuses"
               }
-            }
-          },
-          "links": {
-            "self": {
-              "href": "https://api.bitbucket.org/2.0/repositories/user_name/repo_name/refs/branches/master"
             },
-            "commits": {
-              "href": "https://api.bitbucket.org/2.0/repositories/user_name/repo_name/commits/master"
+            "author": {
+              "raw": "developername <email@example.com>"
             },
-            "html": {
-              "href": "https://bitbucket.org/user_name/repo_name/branch/master"
-            }
+            "hash": "666666666666666666666666666",
+            "date": "2017-03-02T12:17:53+00:00",
+            "parents": [
+              {
+                "hash": "xxxxxxxxxxxxxxxxxxxxxx",
+                "links": {
+                  "self": {
+                    "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/commit/xxxxxxxxxxxxxxxxxxxxxx"
+                  },
+                  "html": {
+                    "href": "https://bitbucket.org/USER-NAME/REPO-NAME/commits/xxxxxxxxxxxxxxxxxxxxxx"
+                  }
+                },
+                "type": "commit"
+              }
+            ],
+            "type": "commit"
           }
-        },
+        ],
+        "closed": false,
         "old": {
-          "type": "branch",
-          "name": "name-of-branch",
+          "name": "master",
           "target": {
-            "type": "commit",
-            "hash": "1e65c05c1d5171631d92438a13901ca7dae9618c",
-            "author": "[[User]]",
-            "message": "old commit message\n",
-            "date": "2015-06-08T21:34:56+00:00",
-            "parents": [
-              {
-                "type": "commit",
-                "hash": "e0d0c2041e09746be5ce4b55067d5a8e3098c843",
-                "links": {
-                  "self": {
-                    "href": "https://api.bitbucket.org/2.0/repositories/user_name/repo_name/commit/9c4a3452da3bc4f37af5a6bb9c784246f44406f7"
-                  },
-                  "html": {
-                    "href": "https://bitbucket.org/user_name/repo_name/commits/9c4a3452da3bc4f37af5a6bb9c784246f44406f7"
-                  }
-                }
-              }
-            ],
+            "message": "Testing notifications...\n",
             "links": {
               "self": {
-                "href": "https://api.bitbucket.org/2.0/repositories/user_name/repo_name/commit/b99ea6dad8f416e57c5ca78c1ccef590600d841b"
+                "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/commit/xxxxxxxxxxxxxxxxxxxxxx"
               },
               "html": {
-                "href": "https://bitbucket.org/user_name/repo_name/commits/b99ea6dad8f416e57c5ca78c1ccef590600d841b"
+                "href": "https://bitbucket.org/USER-NAME/REPO-NAME/commits/xxxxxxxxxxxxxxxxxxxxxx"
               }
-            }
+            },
+            "author": {
+              "raw": "developername <email@example.com>"
+            },
+            "hash": "xxxxxxxxxxxxxxxxxxxxxx",
+            "date": "2017-03-02T12:16:03+00:00",
+            "parents": [
+              {
+                "hash": "d473ca7c0d42fa8b643965a9cd3a36b6c3e180d9",
+                "links": {
+                  "self": {
+                    "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/commit/d473ca7c0d42fa8b643965a9cd3a36b6c3e180d9"
+                  },
+                  "html": {
+                    "href": "https://bitbucket.org/USER-NAME/REPO-NAME/commits/d473ca7c0d42fa8b643965a9cd3a36b6c3e180d9"
+                  }
+                },
+                "type": "commit"
+              }
+            ],
+            "type": "commit"
           },
           "links": {
             "self": {
-              "href": "https://api.bitbucket.org/2.0/repositories/user_name/repo_name/refs/branches/master"
-            },
-            "commits": {
-              "href": "https://api.bitbucket.org/2.0/repositories/user_name/repo_name/commits/master"
+              "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/refs/branches/master"
             },
             "html": {
-              "href": "https://bitbucket.org/user_name/repo_name/branch/master"
+              "href": "https://bitbucket.org/USER-NAME/REPO-NAME/branch/master"
+            },
+            "commits": {
+              "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/commits/master"
             }
-          }
+          },
+          "type": "branch"
+        },
+        "created": false,
+        "new": {
+          "name": "master",
+          "target": {
+            "message": "blah lba\n",
+            "links": {
+              "self": {
+                "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/commit/666666666666666666666666666"
+              },
+              "html": {
+                "href": "https://bitbucket.org/USER-NAME/REPO-NAME/commits/666666666666666666666666666"
+              }
+            },
+            "author": {
+              "raw": "developername <email@example.com>"
+            },
+            "hash": "666666666666666666666666666",
+            "date": "2017-03-02T12:17:53+00:00",
+            "parents": [
+              {
+                "hash": "xxxxxxxxxxxxxxxxxxxxxx",
+                "links": {
+                  "self": {
+                    "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/commit/xxxxxxxxxxxxxxxxxxxxxx"
+                  },
+                  "html": {
+                    "href": "https://bitbucket.org/USER-NAME/REPO-NAME/commits/xxxxxxxxxxxxxxxxxxxxxx"
+                  }
+                },
+                "type": "commit"
+              }
+            ],
+            "type": "commit"
+          },
+          "links": {
+            "self": {
+              "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/refs/branches/master"
+            },
+            "html": {
+              "href": "https://bitbucket.org/USER-NAME/REPO-NAME/branch/master"
+            },
+            "commits": {
+              "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/commits/master"
+            }
+          },
+          "type": "branch"
         },
         "links": {
           "html": {
-            "href": "https://bitbucket.org/user_name/repo_name/branches/compare/c4b2b7914156a878aa7c9da452a09fb50c2091f2..b99ea6dad8f416e57c5ca78c1ccef590600d841b"
+            "href": "https://bitbucket.org/USER-NAME/REPO-NAME/branches/compare/666666666666666666666666666..xxxxxxxxxxxxxxxxxxxxxx"
           },
           "diff": {
-            "href": "https://api.bitbucket.org/2.0/repositories/user_name/repo_name/diff/c4b2b7914156a878aa7c9da452a09fb50c2091f2..b99ea6dad8f416e57c5ca78c1ccef590600d841b"
+            "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/diff/666666666666666666666666666..xxxxxxxxxxxxxxxxxxxxxx"
           },
           "commits": {
-            "href": "https://api.bitbucket.org/2.0/repositories/user_name/repo_name/commits?include=c4b2b7914156a878aa7c9da452a09fb50c2091f2&exclude=b99ea6dad8f416e57c5ca78c1ccef590600d841b"
+            "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME/commits?include=666666666666666666666666666&exclude=xxxxxxxxxxxxxxxxxxxxxx"
           }
-        },
-        "created": false,
-        "forced": false,
-        "closed": false,
-        "commits": [
-          {
-            "hash": "03f4a7270240708834de475bcf21532d6134777e",
-            "type": "commit",
-            "message": "commit message\n",
-            "author": "[[User]]",
-            "links": {
-              "self": {
-                "href": "https://api.bitbucket.org/2.0/repositories/user/repo/commit/03f4a7270240708834de475bcf21532d6134777e"
-              },
-              "html": {
-                "href": "https://bitbucket.org/user/repo/commits/03f4a7270240708834de475bcf21532d6134777e"
-              }
-            }
-          }
-        ],
-        "truncated": false
+        }
       }
     ]
+  },
+  "actor": {
+    "display_name": "The Paavero",
+    "username": "USER-NAME",
+    "links": {
+      "self": {
+        "href": "https://api.bitbucket.org/2.0/users/USER-NAME"
+      },
+      "html": {
+        "href": "https://bitbucket.org/USER-NAME/"
+      },
+      "avatar": {
+        "href": "https://bitbucket.org/account/USER-NAME/avatar/32/"
+      }
+    },
+    "uuid": "{285afbd0-b10e-4a1c-8d4e-ed69418fc46f}",
+    "type": "user"
+  },
+  "repository": {
+    "full_name": "USER-NAME/REPO-NAME",
+    "owner": {
+      "display_name": "The Paavero",
+      "username": "USER-NAME",
+      "links": {
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/users/USER-NAME"
+        },
+        "html": {
+          "href": "https://bitbucket.org/USER-NAME/"
+        },
+        "avatar": {
+          "href": "https://bitbucket.org/account/USER-NAME/avatar/32/"
+        }
+      },
+      "uuid": "{285afbd0-b10e-4a1c-8d4e-ed69418fc46f}",
+      "type": "user"
+    },
+    "name": "REPO-NAME",
+    "uuid": "{d90259d8-19b1-4fb0-8455-342e25f1c94a}",
+    "website": "",
+    "is_private": true,
+    "links": {
+      "self": {
+        "href": "https://api.bitbucket.org/2.0/repositories/USER-NAME/REPO-NAME"
+      },
+      "html": {
+        "href": "https://bitbucket.org/USER-NAME/REPO-NAME"
+      },
+      "avatar": {
+        "href": "https://bitbucket.org/USER-NAME/REPO-NAME/avatar/32/"
+      }
+    },
+    "scm": "git",
+    "type": "repository"
   }
 }

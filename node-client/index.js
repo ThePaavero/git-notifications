@@ -27,12 +27,6 @@ const buildMessage = (event) => {
   return formatter(event)
 }
 
-const outputCommits = (commitArray) => {
-  commitArray.forEach(commit => {
-    console.log('Commit: ' + commit.message)
-  })
-}
-
 socket.on('data', event => {
   console.log('Event received, showing notification')
   notifier.notify({
@@ -40,7 +34,6 @@ socket.on('data', event => {
     'message': buildMessage(event),
     wait: true
   })
-  outputCommits(event.payload.commits)
 })
 
 console.log('Listening to events, connected to socket at ' + config.apiUrl)
