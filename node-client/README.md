@@ -1,7 +1,8 @@
 # The CLI Client
 
 Subscribe to notifications for a repository with this command.
-It outputs native desktop notifications on all events.
+It outputs native desktop notifications on all events, and
+logs possible commits to your terminal.
 
 ## Installing
 1. ``` $ yarn ```
