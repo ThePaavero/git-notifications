@@ -1,22 +1,30 @@
 const subscribeToRepo = process.argv[2]
+const useFormatter = process.argv[3]
+
 if (typeof subscribeToRepo === 'undefined') {
-  return console.log('Only argument should be the repository slug. None given.')
+  return console.log('First argument should be the repository slug. None given.')
+}
+
+const supportedFormatters = [
+  'beanstalk',
+  'bitbucket'
+]
+
+if (supportedFormatters.indexOf(useFormatter) < 0) {
+  console.log('ERROR: Second argument should be VCS name, given is not supported or empty.')
+  console.log('Supported formatters: "' + supportedFormatters.join('", "') + '"')
+  return
 }
 
 const notifier = require('node-notifier')
 const config = require('./apiConfig.json')
+const formatter = require('./formatters/' + useFormatter)
 const socket = require('socket.io-client')(config.apiUrl, {
   query: 'repo=' + subscribeToRepo
 });
 
 const buildMessage = (event) => {
-  return event.payload.beanstalk_user.name +
-    ' did a ' +
-    event.trigger +
-    ' to repository ' +
-    event.payload.repository.title +
-    ', branch ' +
-    event.payload.branch
+  return formatter(event)
 }
 
 const outputCommits = (commitArray) => {
