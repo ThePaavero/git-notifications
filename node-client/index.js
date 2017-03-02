@@ -30,6 +30,9 @@ const buildMessage = (event) => {
 
 socket.on('data', event => {
   console.log('Event received, showing notification')
+  console.log('--------------------------------')
+  console.log(event)
+  console.log('--------------------------------')
   notifier.notify({
     'title': 'New git event',
     'message': buildMessage(event),
