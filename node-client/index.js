@@ -4,7 +4,7 @@ if (typeof subscribeToRepo === 'undefined') {
 }
 
 const notifier = require('node-notifier')
-const config = require('./../apiConfig.json')
+const config = require('./apiConfig.json')
 const socket = require('socket.io-client')(config.apiUrl, {
   query: 'repo=' + subscribeToRepo
 });
