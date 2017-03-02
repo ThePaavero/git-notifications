@@ -4,9 +4,10 @@ Subscribe to notifications for a repository with this command.
 It outputs native desktop notifications on all events.
 
 ## Installing
-```
-$ yarn
-```
+1. ``` $ yarn ```
+
+2. Rename apiConfig.example.json to apiConfig.json and change
+the URL to suit your setup (where is your backend running?).
 
 ## Usage
 ```
