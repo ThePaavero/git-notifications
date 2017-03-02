@@ -7,7 +7,7 @@ logs possible commits to your terminal.
 ## Installing
 1. ``` $ yarn ```
 
-2. Rename apiConfig.example.json to apiConfig.json and change
+2. Rename `apiConfig.example.json` to `apiConfig.json` and change
 the URL to suit your setup (where is your backend running?).
 
 ## Usage
