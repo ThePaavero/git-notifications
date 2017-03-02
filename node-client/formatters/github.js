@@ -1,6 +1,4 @@
 module.exports = (event) => {
-  console.log(event)
-
   const userName = event.head_commit.author.name
   const trigger = 'push' // @todo Ehh...
   const repositoryName = event.repository.name
