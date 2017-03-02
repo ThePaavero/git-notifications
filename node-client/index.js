@@ -10,15 +10,29 @@ const socket = require('socket.io-client')(config.apiUrl, {
 });
 
 const buildMessage = (event) => {
-  return `${event.payload.beanstalk_user.name} did a ${event.trigger} to repository "${event.payload.repository.title}", branch "${event.payload.branch}"`
+  return event.payload.beanstalk_user.name +
+    ' did a ' +
+    event.trigger +
+    ' to repository ' +
+    event.payload.repository.title +
+    ', branch ' +
+    event.payload.branch
+}
+
+const outputCommits = (commitArray) => {
+  commitArray.forEach(commit => {
+    console.log('Commit: ' + commit.message)
+  })
 }
 
 socket.on('data', event => {
   console.log('Event received, showing notification')
   notifier.notify({
     'title': 'New git event',
-    'message': buildMessage(event)
+    'message': buildMessage(event),
+    wait: true
   })
+  outputCommits(event.payload.commits)
 })
 
 console.log('Listening to events, connected to socket at ' + config.apiUrl)

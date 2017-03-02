@@ -25,8 +25,8 @@ axios.post(webHookUrl, {
       {
         "type": "GitCommit",
         "id": "ffffffff",
-        "message": "Important changes.",
-        "branch": "branch-name",
+        "message": "Important changes!",
+        "branch": "master",
         "author": {
           "name": "Name Surname",
           "email": "user@example.org"
