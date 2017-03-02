@@ -12,7 +12,7 @@
     "config": {
       "content_type": "form",
       "insecure_ssl": "0",
-      "url": "http://paavero.com:4200"
+      "url": "http://server.com:4200"
     },
     "updated_at": "2017-03-02T12:33:39Z",
     "created_at": "2017-03-02T12:33:39Z",
