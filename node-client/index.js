@@ -7,7 +7,8 @@ if (typeof subscribeToRepo === 'undefined') {
 
 const supportedFormatters = [
   'beanstalk',
-  'bitbucket'
+  'bitbucket',
+  'github'
 ]
 
 if (supportedFormatters.indexOf(useFormatter) < 0) {
